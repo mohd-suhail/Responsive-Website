@@ -1,0 +1,35 @@
+<html>
+<head>
+    <script>
+        function check(){
+            var txt="Enter valid Password";
+                document.getElementById("error").innerHTML=txt;
+            }
+    </script>    
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="nav">
+        <a href="#" class="logo">HELLO</a>
+        <label for="toggle">&#9776;</label><input type="checkbox" id="toggle" />
+        <div class="menu">
+            <a href="index.html"><span>Home</span></a>
+            <a href="login.html">Login</a>
+            <a href="reg.html">Sign-Up</a>
+            <a href="#">About Us</a>
+        </div>
+    </div>   
+    <div id="cent">
+            <br><h1 style="text-align: center;">Your identity</h1>
+            <img src="images/user-male.jpg" id="icon">
+            <input type="text" placeholder="UserId" id="name"><br><br>
+            <img src="images/pass.jpg" id="icon2"><input type="password" placeholder="Password" id="pass"><br><p id="error"></p>
+            <input type="submit" id="log" value="Login" onClick="check()">
+        </div>
+</body>
+</html>
